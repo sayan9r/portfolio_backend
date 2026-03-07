@@ -4,7 +4,10 @@ import pool from '../config/db.js';
 
 const router = express.Router();
 
-router.get("/",async(req,res) => {
+
+//initial a backend call to restart the server , either it will still on sleep mode 
+
+router.get("/hello",async(req,res) => {
   try{
    res.send("hello");
   }catch (error) {
